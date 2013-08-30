@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html manifest="manifest.appcache">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>AnimalNote</title>
+
+	<!-- Hojas de estilo CSS -->
+	
+	<!--<link rel="stylesheet" type="text/css" href="css/main.css"/>-->
+	<link rel="stylesheet" type="text/css" href="css/credits.css" />
+	<!-- __________________________________ -->
+	<!-- JS -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="js/jquery.ui.widget.js"></script>
+	<script src="js/jquery.ui.mouse.js"></script>
+	<script src="js/jquery.ui.touch-punch.js"></script>
+	<script src="js/respond.min.js"></script>
+	<script type="text/javascript">
+		$.mobile.loadingMessage = false;
+		$(document).ready(function(){
+			var output = document.getElementById("puerco");
+			var path = "images/splash/";
+			var puerco = "cerdito-0";
+			var indexPuerco = Math.floor((Math.random()*8)+1);
+			var urlPuerco = path + puerco + indexPuerco + ".png";
+
+		    var img = new Image();
+		    img.src = urlPuerco;
+
+		    output.appendChild(img);
+
+		    $('#back').click(function(){
+		    	window.location = "index.html";
+		    });
+		    var fondo = "backgrounds-0";
+
+			var indexFondo = Math.floor((Math.random()*8)+1);
+
+			var urlFondo = "url(" + path + fondo + indexFondo + ".png)";
+
+		    
+			document.body.style.backgroundImage = urlFondo;
+		});
+	</script>
+	<!-- __________________________________ -->
+
+</head>
+<body>
+	<div id="puerco"></div>
+
+	<table id="datos">
+		<tr>
+			<td>
+				<div>
+					<h3>Diseñadores</h3>
+					Aarón Iván Martínez García <br/>
+					Irving Didier Conde Franco<br/>
+					<br/>
+				</div>
+			</td>
+			<td>
+				<div>
+					<h3>Desarrolladores</h3>
+					Erick Uribe de la Paz Pérez<br/>
+					Marlon Cortés Pérez<br/>
+					Raúl Alberto Soto Cruz<br/>
+					Ricardo Alfonso González Téllez<br/>
+					<br/>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<small>Coordinación de Jorge Antonio Díaz Lara</small>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				</div>
+	<div id="ctin">
+		Desarrollado en
+		<img src="images/logoCTIN.png"/>
+	</div>
+			</td>
+		</tr>
+	</table>
+	<div>
+		
+		
+		<br/>
+		
+		<div id="back"><img src="images/back.png" /></div> 
+		
+
+	
+
+	
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+	background: url(../images/splash/inicial.png) no-repeat fixed 100% 100%;
+    color:  rgb(30,90,90);
+}
+#help {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+#help img{
+	height: 20px;
+}
+
+ul {
+	margin: 0 3px 3px 3px; 
+	padding: 0.4em; 
+	padding-left: 1.5em; 
+	font-size: 1.4em; 
+	height: 18px;
+}
+#content {
+	overflow-y: scroll;
+	height: 350px;
+}
+li {
+	display: inline;
+}
+table tr{
+	background:url(../images/barnote.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+	opacity: 0.7;
+}
+tr td:first-child{
+	padding-right: 0px;
+}
+tr td:last-child {
+	font-size: 0.7em;
+	font-style: italic;
+	padding-right: 10px;
+}
+
+td img{
+	vertical-align: middle;
+	height: 20px;
+	padding-top: 6px;
+}
+td div{
+	vertical-align: middle;
+	height: 22px;
+	padding-top: 6px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+table th{
+	text-align: center;
+	padding-left: 10px;
+}
+table td {
+	padding-left: 10px;
+	margin: auto;
+	top: auto;
+	max-width: 100px;
+}
+
+.Abajo {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background:url(../images/iconos.png) -310px -120px;
+}
+
+.Arriba {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background:url(../images/iconos.png) -285px -120px;
+}
+
+#sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+}
+
+#sortable li {
+	margin: 0 3px 3px 3px; 
+	padding: 0.4em; 
+	padding-left: 1.5em; 
+	font-size: 1.4em; 
+	height: 18px; 
+}
+
+#sortable li span {
+	position: absolute; 
+	margin-left: -1.3em; 
+}

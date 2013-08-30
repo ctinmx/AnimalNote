@@ -1,0 +1,39 @@
+#back {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	opacity: 0.8;
+}
+#puerco{
+	position: absolute;
+	right: 10px;
+	width: 30%;
+}
+#puerco img{
+	width: 80%;
+	float:right;
+}
+#ctin img{
+	height: 45px;
+	vertical-align: middle;
+}
+#datos{
+position: absolute;
+margin-top: 90px;
+}
+
+@font-face {
+  font-family: 'Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/regular.otf') format('opentype');
+}
+
+body{
+  	font-family: 'Regular';
+  	overflow: hidden;
+}
+small{
+	font-size: 50%;
+}

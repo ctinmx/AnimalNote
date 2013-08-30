@@ -1,0 +1,47 @@
+Estructura
+
+nota = {
+	"nombre":"Esta chingon",
+	"fecha_modif":"01/02/2013",
+	"index_fondo":"2",
+	"escribe":[
+		{
+			"texto":"peluche en el estuche",
+			"left":"",
+			"top":""
+		},
+		{}
+	],
+	
+	"dibuja":{
+		"data":"data:\\\"
+	}
+	
+	"postits":[
+		{
+			"url":"url",
+			"left":"",
+			"top":""
+		},
+		{}
+	],
+	
+	"imagen":[
+		{ 
+			"url":"",
+			"left":"",
+			"top":""
+		}
+	],
+
+	"ubica":[
+		{
+			"tipo":1,
+			"left":"",
+			"top":"",
+			"altitud":"",
+			"latitud":"",
+		},
+		{}
+	]
+}

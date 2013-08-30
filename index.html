@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html manifest="manifest.appcache">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>AnimalNote</title>
+
+	<!-- Hojas de estilo CSS -->
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- __________________________________ -->
+	<!-- JS -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="js/jquery.ui.widget.js"></script>
+	<script src="js/jquery.ui.mouse.js"></script>
+	<script src="js/jquery.ui.touch-punch.js"></script>
+	<script src="js/save.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/respond.min.js"></script>
+	<script type="text/javascript">
+		$.mobile.loadingMessage = false;
+	</script>
+	<!-- __________________________________ -->
+
+</head>
+<body>
+	<div id="help"><img src="images/info.png" /></div>
+	<center id="touch">
+		<div>
+			<br/>
+			<img src="images/header.png" /><br />
+			<button id="agregar"><img id="mas" src="images/mas.png" /></button>
+		</div>
+		<div id="content">
+			<table id="tablaNotas">
+				<tbody id="tablaBody">
+					<!--<tr id="yo">
+						<td>imagen</td>
+						<td>nombre</td>
+						<td>fecha</td>
+					</tr>-->
+				</tbody>
+			</table>
+		</div>
+
+	</center>
+
+</body>
+</html>

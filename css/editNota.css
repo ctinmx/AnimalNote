@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/regular.otf') format('opentype');
+}
+#container {
+	overflow: hidden;
+	position: relative;
+	height: 50px;
+	width: 95%;
+	background-image: url(../images/navbar.png);
+	background-size: 100% 100%;
+}
+#container img {
+	height: 26px;
+}
+#containerdibuja img {
+	height: 34px;
+}
+#cont_escribir{
+	width: 100%;
+}
+
+#barraFondo{
+	width: 100%;
+	position: fixed;
+	bottom: 40px;
+}
+
+#barraFondo img {
+	display: inline-block;
+	position: relative;
+	height: 30px;
+}
+
+.itemFondo{
+	width: 30px;
+	height: 30px;
+}
+
+img .fondo{
+	position: static;
+}
+
+.flecha{
+	position: relative;
+}
+
+img {
+	position: absolute;
+} 
+.imagen {
+	height: 60px;
+}
+.hiddenfile {
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: url(../images/fondos/1.png);
+  	font-family: 'Regular';
+	background-size: 320px 480px;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.ui-page {
+	padding-left: 0px;
+}
+.ui-content{
+    margin-top: -23px;
+}
+#bloq {
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	z-index: 100;
+	background-image: url("../images/candado_cerrado.png");
+	width: 35px;
+	height: 35px;
+}
+
+.bloq_abierto {
+	background-image: url("../images/candado_abierto.png") !important;
+}
+
+#cfondo {
+	position: absolute;
+	z-index: 100;
+	bottom: 37px;
+	height: 35px;
+	left:48%;
+}
+#cfondo img{
+	height: 25px;
+}
+
+#back {
+	position: absolute;
+	bottom: 40px;
+	left: 20px;
+	z-index: 100;
+	opacity: 0.8;
+}
+#barra {
+	opacity: 0.4;
+}
+h3 {
+	width: auto;
+}
+textarea {
+	border-style: dashed;
+	width: auto;
+	resize: none;
+	position: relative;
+}
+
+#mapa{
+	width: 250px;
+	height: 330px;
+	position: fixed;
+	left: 25px;
+	top: 20px;
+}
+
+#cerrar{
+	position: fixed;
+	left: 270px;
+	top: 70px;
+}

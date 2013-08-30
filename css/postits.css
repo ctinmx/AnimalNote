@@ -1,0 +1,15 @@
+#containerpostics {
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    width: 95%;
+    background-image: url(../images/subnavbar.png);
+    background-size: 100% 100%;
+    padding-bottom: 5px;
+    margin-top:5px;
+}
+#containerpostics .item {
+	display: inline;
+	position: relative;
+	margin: 7px;
+}

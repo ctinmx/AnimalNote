@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache" >
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>AnimalNote</title>
+	<!-- Hojas de estilo CSS -->
+	
+	<link rel="stylesheet" href="css/jquery.ui.all.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/editNota.css" />
+	<link rel="stylesheet" type="text/css" href="css/postits.css" />
+	<link rel="stylesheet" type="text/css" href="css/dibuja.css" />
+	<!-- JS -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="js/jquery.ui.widget.js"></script>
+	<script src="js/jquery.ui.mouse.js"></script>
+	<script src="js/jquery.ui.touch-punch.js"></script>
+	<script src="js/autoresize.jquery.js"></script>
+
+	<script src="http://open.mapquestapi.com/sdk/js/v7.0.s/mqa.toolkit.js"></script>
+	
+	<script type="text/javascript">
+		$.mobile.loadingMessage = false;
+	</script>
+
+</head>
+<body>
+	<div class="hiddenfile">
+		<input name="upload" type="file" id="fileinput" accept="image/*" />
+	</div>
+	<div id="container">
+		<img src="images/item1.png" id="lapiz" height="26" onclick="activadibuja();desactivapostics();offMap();"/>
+		
+		<img src="images/item2.png" id="barra" height="26" onclick="desactivadibuja();activapostics();offMap();"/>
+		
+		<img src="images/item3.png" id="escribe" height="26" onclick="desactivapostics();desactivadibuja();offMap();"/>
+		
+		<img src="images/item4.png" id="imagen" height="26" onclick="desactivadibuja();desactivapostics();offMap();"/>
+		
+		<img src="images/item5.png" id="barra" height="26" onclick="desactivadibuja();desactivapostics();mapa();"/>
+		
+	</div>
+	<div id="contenido">
+
+		<!-- parte de postics-->
+		<div id="containerpostics">
+			<img id="postit1" src="images/etiquetas/item1.png" class="item item1" />
+			<img id="postit2" src="images/etiquetas/item2.png" class="item item2" />
+			<img id="postit3" src="images/etiquetas/item3.png" class="item item3" />
+			<img id="postit4" src="images/etiquetas/item4.png" class="item item4" />
+			<img id="postit5" src="images/etiquetas/item5.png" class="item item5" />
+			<img id="postit6" src="images/etiquetas/item6.png" class="item item6" />
+			<img id="postit7" src="images/etiquetas/item7.png" class="item item7" />
+	  	</div>
+		<div id="containerdibuja" style="margin-top:5px;">
+			<img src="images/lapiz.png" id="lapiz" onClick="dibujando();"/>
+			<img src="images/goma.png" id="goma" onClick="borrando();"/>
+			<img src="images/goma_total.png" id="limpia" onClick="eliminar();"/>
+		</div>
+	</div>
+
+
+		<!-- parte de dibuja-->
+	<canvas id="canvasatras" style="position: absolute; top:95px;"></canvas>
+	<canvas id="canvasSignature" width="300px" height="360px" style="position: absolute; top:95px;"></canvas>
+	<canvas id="bloqueo" width="300px" height="360px" style="position: absolute; top:95px; margin-left:10px;"></canvas>
+
+	<!-- Termina parte de dibuja-->
+	<div id="cont_escribir">
+		
+	</div>
+
+	<div id="bloq"></div>
+	<div id="cfondo"><img src="images/bfondos.png" /></div>
+	<div id="back"><img src="images/back.png" /></div>
+
+	<div id="barraFondo">
+		<img src="images/bolitas/bolitas-01.png" />
+		<img src="images/bolitas/bolitas-02.png" />
+		<img src="images/bolitas/bolitas-03.png" />
+		<img src="images/bolitas/bolitas-04.png" />
+		<img src="images/bolitas/bolitas-05.png" />
+		<img src="images/bolitas/bolitas-06.png" />
+		<img src="images/bolitas/bolitas-07.png" />
+		<img src="images/bolitas/bolitas-08.png" />
+		<img src="images/bolitas/bolitas-09.png" />
+	</div>
+
+
+	<!-- MAPA -->
+
+	<div id="mapa" style="display: block; position: absolute;"></div>
+	<img src="images/rojo.png" id="cerrar" />
+
+	<!-- __________________________________ -->
+
+    <script type="text/javascript" src="js/postics.js"></script>
+	<script type="text/javascript" src="js/dibuja.js"></script>  
+    <script type="text/javascript" src="js/escribe.js"></script>
+    <script type="text/javascript" src="js/imagen.js"></script>
+    <script type="text/javascript" src="js/ubica.js"></script>
+	<script type="text/javascript" src="js/save.js"></script>
+	<script type="text/javascript" src="js/editNota.js"></script>
+	<!-- __________________________________ -->
+</body>
+</html>
