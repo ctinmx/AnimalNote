@@ -19,7 +19,7 @@
   "orientation":["portrait"],
   "permissions": {
     "geolocation": {
-      "description" : "Sugerirte lugares para visitar cercanos a tu ubicación"
+      "description" : "Marcar el lugar donde te encuentras"
     },
     "device-storage:sdcard":{ "access": "readwrite" }
   },
