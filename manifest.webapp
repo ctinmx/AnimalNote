@@ -3,7 +3,7 @@
   "name": "AnimalNote",
   "description": "Aplicacion para hacer notas chidas",
   "default_locale": "es",
-  "launch_path": "/splash.html",
+  "launch_path": "index.html",
   "icons": {
     "16": "/images/iconos/OINK-16.png",
     "32": "/images/iconos/OINK-32.png",
@@ -13,13 +13,13 @@
   },
   "type":"privileged",
   "developer": {
-    "name": "by CTIN",
-    "url": "http://www.ctinmexico.com/"
+    "name": "CTINmx",
+    "url": "http://www.ctinmx.com/"
   },
   "orientation":["portrait"],
   "permissions": {
     "geolocation": {
-      "description" : "Marcar el lugar en donde te encuentras"
+      "description" : "Sugerirte lugares para visitar cercanos a tu ubicación"
     },
     "device-storage:sdcard":{ "access": "readwrite" }
   },
